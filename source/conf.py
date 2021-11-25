@@ -19,9 +19,9 @@ numfig_secnum_depth = 3
 # -- Project information -----------------------------------------------------
 
 # project = u'Руководство по качеству группы клинической дозиметрии'
-project = u'Research work of students'
-copyright = '2021, Kichigin'
-author = u'Kichigin Georgii Vladimirovich'
+project = u'Ohanyan-RW1'
+copyright = '2021, Oganyan'
+author = u'Oganyan Vage Robertovich'
 
 # The full version, including alpha/beta/rc tags
 version = '1.0.0'  # this is meant to reference the version of EasyBuild

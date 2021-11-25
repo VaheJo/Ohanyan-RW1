@@ -50,7 +50,7 @@
 
 .. rst-class:: right
 
-Кичигин Г.В.
+Оганян Ваге
 ~~~~~~~~~~~~~~
 
 .. toctree::    
@@ -59,7 +59,7 @@
     :maxdepth: 2
     
     Intro/Introduction
-    MC_methods/General
+    QA/QA1
     
 * :ref:`genindex`
 * :ref:`modindex`

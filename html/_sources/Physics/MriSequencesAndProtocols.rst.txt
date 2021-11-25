@@ -1,0 +1,15 @@
+.. _physics_mrisequences:
+
+МРТ последовательности
+======================
+
+Отдельная глава посвящена **анализу и систематизацию МРТ последовательностей**, 
+используемых в клинических протоколах. Именно в этой главе содержится обоснование
+параметров серий клинических протоколов и правила их получения и обоснования.
+
+Основным литературным источником является монография :footcite:`bernstein2018handbook`.
+
+See :cite:`ACRQAManual2015` for an introduction to non-standard analysis.
+Non-standard analysis is fun :footcite:`ACRQAManual2015`.
+
+.. footbibliography::

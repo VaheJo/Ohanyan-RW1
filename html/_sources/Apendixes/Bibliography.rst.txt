@@ -1,0 +1,7 @@
+.. _Apendix_Bibliography:
+
+Список литературы
+=================
+
+.. bibliography::
+   :style: plain

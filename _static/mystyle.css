@@ -1,0 +1,20 @@
+.center h1 {
+    text-align: center;
+}
+
+.right h2 {
+    text-align: right;
+}
+
+span.bolditalic {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+span.highlight {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}

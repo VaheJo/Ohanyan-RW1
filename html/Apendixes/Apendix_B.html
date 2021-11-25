@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>14. Приложение Б. Редактирование руководства &mdash; документация Research work of students 0.0.1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/logo_MKNC-little.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
+    <link rel="search" title="Поиск" href="../search.html" />
+    <link rel="next" title="15. Приложение В. Справочная информация" href="Apendix_C.html" />
+    <link rel="prev" title="13. Приложение A. Терминология" href="Apendix_A.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #FBFBFB" >
+            <a href="../contents.html">
+            <img src="../_static/logo_MKNC-title.png" class="logo" alt="Логотип"/>
+          </a>
+              <div class="version">
+                1.0.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Содержание</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Intro/Introduction.html">1. Введение</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Physics/General.html">2. Физические аспекты</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Physics/Service.html">3. Авторизованный сервис</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Physics/LocalControl.html">4. Локальный контроль</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Physics/PhysicsControl.html">5. Расширенный физический контроль</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Physics/MriSequencesAndProtocols.html">6. МРТ последовательности</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Physics/Artefacts.html">7. Артефакты</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clinic/General.html">8. Клинические аспекты</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clinic/WorkFlow.html">9. Рабочие процессы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clinic/StudyReports.html">10. Оформление протоколов исследований</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClinicalProtocols/General.html">11. Клинические протоколы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClinicalProtocols/Prostate.html">12. Протокол исследования предстательной железы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Apendix_A.html">13. Приложение A. Терминология</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">14. Приложение Б. Редактирование руководства</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#github">14.1. Работа с системой контроля версий GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#visual-studio-code-vscode">14.2. Редактирование документов с помощью Visual Studio Code (VSCode)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">14.2.1. Расширение <strong>reStructuredText</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">14.3. Язык разметки <strong>reStructuredText</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">14.4. Генерация документов в среде <strong>Sphinx</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id10">14.4.1. Шпаргалка по Sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">14.5. Правила коллективной работы с документами на GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">14.6. Файловая структура проекта руководства</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">14.7. Работа с рисунками</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">14.8. Работа с таблицами</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id17">14.9. Вопросы и ответы</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#q-branch">14.9.1. Q: Как создать мой собственный branch для работы над руководством?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#q">14.9.2. Q: Как мне в тексте вставить ссылку на номер изображения или таблицы?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#q-web">14.9.3. Q: Как вставить гиперссылку на Web страницу?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#q-snippet">14.9.4. Q: Эксприменты со snippet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">14.9.5. Q: Выделение блоков кодов</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Apendix_C.html">15. Приложение В. Справочная информация</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bibliography.html">16. Список литературы</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств"  style="background: #FBFBFB" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">Research work of students</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+      <li><span class="section-number">14. </span>Приложение Б. Редактирование руководства</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ggorlachev/QARadiology/blob/main/source/Apendixes/Apendix_B.rst" class="fa fa-github"> Редактировать на GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="apendix-b">
+<span id="id1"></span><h1><span class="section-number">14. </span>Приложение Б. Редактирование руководства<a class="headerlink" href="#apendix-b" title="Ссылка на этот заголовок"></a></h1>
+<p>Данное приложение содержит описание разворачивания средств разработки руководства,
+правил работы с ними и некоторых других технических вопросов, не связанных непосредственно с системой качества.</p>
+<p>Руководство создается в платформенно независимой среде.
+Основной рабочей версией является электронный справочник, отображаемый в Web браузере.
+Параллельно генерируется PDF версия руководства, в котором сохраняются все гиперссылки.
+Рабочую среду работы над документами можно разворачивать одинаково на Windows, MAC и Unix.</p>
+<p>Руководство пишется на основе современных технологий.
+Ключевыми являются написание документов ня языке разметки
+<a class="reference external" href="https://en.wikipedia.org/wiki/ReStructuredText">reStructuredText</a>.
+Генерация готовых документов осуществляется набором инструментов
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html">Sphinx</a>.</p>
+<p>Разворачивание полной среды разработки документации может быть сложным для тех,
+кто непосредственно занимается контентом.
+Но для большинства авторов это не является необходимым или важным.
+Для написаниея контента автору необходимо иметь минимум:</p>
+<ol class="arabic simple">
+<li><p>Установленную систему <strong>Sphinx</strong> (нужно для Preview)</p></li>
+<li><p>Установленную программу <strong>Visual Studio Code</strong></p></li>
+<li><p>Установленное для него расширение <strong>reStructuredText</strong></p></li>
+<li><p>Налаженную инфраструктуру для работы с <strong>GitHub</strong>
+где находится первоисточник документации</p></li>
+</ol>
+<p>Далее будут кратко описаны действия по установке и использованию перечисленного.</p>
+<p>Публикация рабочих версий, пригодных для клинического использования,
+осуществляется администратором руководства.</p>
+<section id="github">
+<h2><span class="section-number">14.1. </span>Работа с системой контроля версий GitHub<a class="headerlink" href="#github" title="Ссылка на этот заголовок"></a></h2>
+<ol class="arabic">
+<li><p>Для начала работы необходимо зарегистрироваться в системе по адресу:</p>
+<p><a class="reference external" href="http://github.com">http://github.com</a></p>
+</li>
+<li><p>Переслать администратору ваше имя (login) в системе для предоставления доступа к
+репозитарию руководства. E-mail администратора:</p>
+<p><a class="reference external" href="mailto:ggorlachev&#37;&#52;&#48;roiss&#46;ru">ggorlachev<span>&#64;</span>roiss<span>&#46;</span>ru</a></p>
+</li>
+<li><p>Установить на своем компьютере систему Git, если это еще не сделано, например,
+во время работы над другими проектами. Руководство по установке и описание работы
+с ситемами контроля версий включая прекрасный учебник можно найти по адресу</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+</pre></div>
+</div>
+</li>
+<li><p>Первый раз клонировать проект на собственный компьютер и далее взаимодействовать
+с центральным ресурсом через редактор <strong>VSCode</strong>. Для клонирования создайте папку проекта,
+перейдите в нее и выполните команду клонирования:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mkdir projects
+cd projects
+cd QARadiology
+code .
+</pre></div>
+</div>
+</li>
+<li><p>Дополнительно можно установить приложение для работы с системой GitHub.
+Описание, адресс загрузки и прочая информация находятся по адресу</p>
+<p><a class="reference external" href="https://desktop.github.com">https://desktop.github.com</a></p>
+<p>GitHub работает с этим приложением через команду <strong>Open in Desktop</strong>.
+Изучение этой программы может потребовать усилий и рекомендуется только для тех, кто будет много работать с
+данной системой включая разработки помимо документации.
+Перейти на сайт проекта и создать локальную копию</p>
+<p><a class="reference external" href="https://github.com/ggorlachev/QARadiology">https://github.com/ggorlachev/QARadiology</a></p>
+<p>Далее <strong>Clone or download</strong> -&gt; <strong>Open in Desktop</strong> -&gt; <strong>Удобная вам корневая папка проектов</strong>.
+GitHub является самым известным в мире сервисом контроля версий.
+Он используется в первую очередь разработчиками программного обеспечения.
+Данный проект - пример - более широкого смысла применения методики контроля версий.
+Более подробная информация содержится на сайте сервиса и интернете и выходит за рамки данного документа.
+Создание веток документов и отправка изменений на сервер частично будут рассмотрены далее в разделе,
+касающемся непосредственно редактирования документов.
+Описанная в данном пункте процедура является альтернативной клонированию, описанному в предыдущем пункте.</p>
+</li>
+</ol>
+</section>
+<section id="visual-studio-code-vscode">
+<h2><span class="section-number">14.2. </span>Редактирование документов с помощью Visual Studio Code (VSCode)<a class="headerlink" href="#visual-studio-code-vscode" title="Ссылка на этот заголовок"></a></h2>
+<p>Существует множество способов редактирования документов от простого <strong>Notepad</strong> до специализированных редакторов,
+работающих с языком разметки <strong>Markdown</strong>. Хорошим путем является редактирование в среде разработки <strong>VSCode</strong>.
+Важным соображением при выборе редактора является взаимодействие с <strong>GitHub</strong>.
+На данном этапе рекомендуется работа с документами исключительно с помощью <strong>VSCode</strong>,
+в котором связь с системой контроля версий интегрирована.</p>
+<p>Загрузки и справочная информация по VSCode находится по адресу</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://code.visualstudio.com/download
+</pre></div>
+</div>
+<p>Для редактирования документов перейдите в папку проекта и запустите <strong>VSCode</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd QARadiology
+code .
+</pre></div>
+</div>
+<p><strong>VSCode</strong> - это расширяемая среда. Для эффективной работы с <strong>Markdown</strong>
+документы могут быть полезны плагины.
+Система по умолчанию предлагает установить рекомендуемые плагины
+в зависимости от формата файлов. Выбор плагинов пока
+не регламентируется и допускается собственный выбор.</p>
+<p>VSCode имеет множество других применений.
+Его следует рассматривать как основной инструмент медицинских
+физиков и уделить освоению работы с ним столько сколько нужно.
+Вся учебная информация в интернете начиная с сайта самого продукта.</p>
+<section id="id2">
+<h3><span class="section-number">14.2.1. </span>Расширение <strong>reStructuredText</strong><a class="headerlink" href="#id2" title="Ссылка на этот заголовок"></a></h3>
+<p>Данное <a class="reference external" href="https://docs.restructuredtext.net/">расширение для работы с руководством в Sphinx</a>
+является полезным и даже необходимым.</p>
+<p>Оно подчеркивает синтаксис в исходном тексте, содержит шаблоны кодов,
+подсказки и показывает отформатированный текст прямо в работе над документами.</p>
+<p>Установка расширение просо и очевидно.
+Смотри <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext">инструкцию производителя</a>.</p>
+<p>Установка всего требуемого для данного расширения в норме не требуется,
+так как должно было быть установлено при разворачивании платформы <em>Sphinx</em>.</p>
+<p>Для работы по написанию контента из всей документации расширения достаточно познакомиться с
+<a class="reference external" href="https://docs.restructuredtext.net/articles/shortcuts.html">Keyboard Shortcuts</a> и
+<a class="reference external" href="https://docs.restructuredtext.net/articles/snippets.html">Code Snippets</a>.</p>
+</section>
+</section>
+<section id="id5">
+<h2><span class="section-number">14.3. </span>Язык разметки <strong>reStructuredText</strong><a class="headerlink" href="#id5" title="Ссылка на этот заголовок"></a></h2>
+<p><strong>reStructuredText</strong> - это очень простой набор правил меток внутри обычного текстового файла,
+указывающий тип прилежащей информации с точки зрения форматирования конечного результата.</p>
+<p>Самый простой способ изучения языка - это смотреть в исходный текст
+данного документа и действовать по аналогии.
+В качестве справочника можно использовать данное приложение.
+В части собственно написания контента примеры как сделать то или это
+находятся в разделе <a class="reference internal" href="#id17">Вопросы и ответы</a> данного приложения.</p>
+<p>И, наконец, для работы с контентом рекомендуется
+<a class="reference external" href="https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html#internal-and-external-links">шпаргалка по форматированию</a>.</p>
+</section>
+<section id="id7">
+<h2><span class="section-number">14.4. </span>Генерация документов в среде <strong>Sphinx</strong><a class="headerlink" href="#id7" title="Ссылка на этот заголовок"></a></h2>
+<p><strong>Sphinx</strong> - это по сути технология и набор инструментов для разработки докумментации.
+Под разработкой имеется ввиду создание контента документации со служебными метками
+используемыми для генерации документов в пригодном для употребления человеком.
+Это как минимум <strong>Web</strong> сайт документации и документв формате <strong>PDF</strong>.</p>
+<p>Установка <strong>Sphinx</strong> начинается с установки <strong>Python</strong> (если еще не установлен).
+Домашняя страница <strong>Python</strong> с установочными пакетами и документацией находится по ссылке:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://www.python.org/
+</pre></div>
+</div>
+<p>Нужно загрузить последнюю версию.
+Затем, запустить загруженный файл и следовать процессу установки отвечая на вопросы.
+Возможно не обязательно, но лучше пойти по пути выбора параметров установки
+(<em>custom installation</em>). Наиболее существенно в выборе - это установка для всех пользователей компьютера и
+и простой путь для установки, например, <strong>C:Python</strong>.
+В противном случае могут возникнуть сложности настройки <strong>VSCode</strong> на работу с <strong>Python</strong>.</p>
+<p>Установка <strong>Sphinx</strong> осуществляется командой:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install -U Sphinx
+</pre></div>
+</div>
+<p>указанной на домашней странице <a class="reference external" href="https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html#internal-and-external-links">Sphinx</a>.</p>
+<p>Шаги по созданию и настройке нового проекта документации описаны по
+<a class="reference external" href="https://pythonhosted.org/an_example_pypi_project/sphinx.html">ссылке</a>.
+Но в случае данного руководства по качеству они не требуеются,
+так как проект уже существует и настроен.
+Более того, если возникнет задаче создания какого-то другого проекта,
+проще взять его за основу, убрать ненухный контент просто удалив файлыи
+и отредактировать настройки типа названия, автора и т.п.</p>
+<p>Нет смысла повторять прекрасную документацию, имеющуюся в интернете
+в дополнение к сказанному.
+Далее приводится не очень системная, но полезная <strong>шпарагалка по Sphinx</strong>,
+возникшая в процессе работы с этой системой.
+В ней полезна само перечисление вопросов и конкретные ссылки.</p>
+<section id="id10">
+<h3><span class="section-number">14.4.1. </span>Шпаргалка по Sphinx<a class="headerlink" href="#id10" title="Ссылка на этот заголовок"></a></h3>
+<ol class="arabic">
+<li><p>Для нового проекта документации нужно использовать скрипт</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ sphinx-quickstart
+</pre></div>
+</div>
+</li>
+<li><p>Он создает директорию и в ней конфигурационный файл conf.py и мастер документ index.rst</p></li>
+<li><p>Пример  построения документации</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ sphinx-build -b html source html
+</pre></div>
+</div>
+</li>
+<li><p>Предыдущая команда создает более правильное решение в виде Makefile и make.bat.
+Поэтому для построения документации нужна просто команда типа</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>make html
+make latexpdf
+</pre></div>
+</div>
+</li>
+<li><p>Хорошая ссылка на памятку по началу</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://pythonhosted.org/an_example_pypi_project/sphinx.html
+</pre></div>
+</div>
+<p>Ссылка на страницу документации</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>http://www.sphinx-doc.org/en/master/contents.html
+https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html
+</pre></div>
+</div>
+<p>Ссылка на страницу со списком примеров</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>http://www.sphinx-doc.org/en/master/examples.html
+https://easybuild.readthedocs.io/en/latest/index.html
+https://github.com/easybuilders/easybuild
+https://www.statsmodels.org/stable/index.html
+https://github.com/statsmodels/statsmodels
+</pre></div>
+</div>
+</li>
+<li><p>Для генерации PDF требуется latex. Среди рекомендаций фигурирует MiTex и Tex Live.
+Я установил последний. Соображением было то, что он содержит множество ресурсов
+типа шрифтов и даже минимальную версию Tcl</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://www.tug.org/texlive/acquire-netinstall.html
+</pre></div>
+</div>
+</li>
+<li><p>Как работать со множеством языков описано на странице</p>
+<p>Там есть последовательное описание шагов.
+Все это реально работает как прописано.
+Однако технология вызывает сомнения.
+Реальные тексты разбиты кавычками на куски.
+Это затрудняет перевод смысла, вероятно даже гуглу.
+Не понятно что делать с изменениями. Каждый раз генерировать шаблоны?
+В документации так и сказано. Затем надо работать с разницей.
+Есть соответствующая команда. Однако, при создании PDF уже возникли какие-то проблемы.</p>
+<p>Более простым и качественным представляется работа с копией документации и
+переводом контента как целого. На этом и останавливаемся.
+Переводом на другие языке лучше заняться после полного
+написания на русском и то по мере необходимости.</p>
+</li>
+<li><p>Прочие полезные ссылки</p></li>
+</ol>
+</section>
+</section>
+<section id="id11">
+<h2><span class="section-number">14.5. </span>Правила коллективной работы с документами на GitHub<a class="headerlink" href="#id11" title="Ссылка на этот заголовок"></a></h2>
+<p>Главная сложность коллективной работы с документами - это возможность конфликтов редактирования одного и того же объекта.
+Предлагаемая технология уменьшает сложности слияния вкладов авторов уже за счет деления большого руководства
+на множесто отдельных файлов, управляемых системой.
+Но соновным дирижором является система <strong>Git</strong> в данном случае представленная <strong>GitHub</strong>.</p>
+<p>Необходимо уяснить несколько правил и приемов работы с системой контроля версий (<strong>Git</strong>)
+Каждый автор создает свою собственную ветку (<strong>branch</strong>) и работает с документами не беспокоясь о том,
+что с ним делают другие. Время от времени следует делать <strong>commit</strong>. Когда работа достигает
+состояния включения в основную версию руководство делается <strong>pull request</strong>. Администратор рассматривает запросы на слияние.
+Если возникают проблемы слияния или существенные замечания, администратор делает замечания и отправляет автору на доработку.
+Если нет, то добавляет изменения.</p>
+<p>Авторы по своему усмотрению делают вливание изменений из основной версии в свою ветку.
+Важно это делать регулярно с целью уменьшения ручной работы при слиянии документов в будущем.</p>
+<p>Детальное описание приемов работы выходит за рамки данного документа.
+Освоение должно проходить самостоятельно и под руководством экспертов из числа членов группы.</p>
+</section>
+<section id="id12">
+<h2><span class="section-number">14.6. </span>Файловая структура проекта руководства<a class="headerlink" href="#id12" title="Ссылка на этот заголовок"></a></h2>
+<div class="line-block">
+<div class="line">Структура файлов данного руководства показана на следующей схеме
+<a class="reference internal" href="#file-structure-figure"><span class="std std-numref">(Рис. 14.6.1)</span></a>.</div>
+<div class="line">Описание важных папок содержится в таблице
+<code class="xref std std-numref docutils literal notranslate"><span class="pre">(Табл.</span> <span class="pre">%s)</span></code>.</div>
+</div>
+<figure class="align-center" id="file-structure-figure">
+<img alt="../_images/FileStructure.png" src="../_images/FileStructure.png" style="width: 90%;" />
+<figcaption>
+<p><span class="caption-number">Рис. 14.6.1 </span><span class="caption-text">Файловая структура проекта QARadiology</span><a class="headerlink" href="#file-structure-figure" title="Постоянная ссылка на рисунок"></a></p>
+<div class="legend">
+<p>На рисунке показаны ти фрагмента. Слева все дерево папок проекта.
+Справа вверху содержимое папки исходных кодов.
+Справа внизу содержимое одной из папок изображений.</p>
+</div>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="colwidths-given docutils align-default" id="id20" style="width: 90%">
+<caption><span class="caption-number">Таблица 14.6.1 </span><span class="caption-text">Назначение папок проекта</span><a class="headerlink" href="#id20" title="Постоянная ссылка на таблицу"></a></caption>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 86%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Папка</p></th>
+<th class="head"><p>Описание</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>source</p></td>
+<td><p>корневая папка контента (исходных кодов) проекта</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">build</div>
+<div class="line">_build</div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">служебные папки, в которых собираются окончательные документы,</div>
+<div class="line">содержимое этих папок генерируется программами Sphinx и не отправляется на сервер GitHub</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>images</p></td>
+<td><div class="line-block">
+<div class="line">папки, где размещаются изображения,</div>
+<div class="line">такое название папок определено политикой данного руководства,</div>
+<div class="line">папки создаются внутри разделов по усмотрению авторов</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>PartN</p></td>
+<td><div class="line-block">
+<div class="line">папки разделов QARadiology в соответствии с его структурой,</div>
+<div class="line">подразделы этих папок соответствуют дальнейшему делению на подглавы,</div>
+<div class="line">глубина вложений зависит от размера контекста и пока не имеет четкой политики</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>conf.py</p></td>
+<td><p>файл конфигурации документации (в папке source)</p></td>
+</tr>
+<tr class="row-odd"><td><p>contents.rst</p></td>
+<td><p>файл структуры документации (оглавление), включающий все файлы контента,
+участвующие в генерации выходных документов
+(находится под управлением администратора проекта документации,
+для работы над разделами документации не обязать включать даже сами разделы)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="id13">
+<h2><span class="section-number">14.7. </span>Работа с рисунками<a class="headerlink" href="#id13" title="Ссылка на этот заголовок"></a></h2>
+<p>Примеров работы с таблицами уже имеется множество в существующем контексте данного проекта.
+Вместо пошаговых инструкций, каких множество в интернете, например по ссылкам в разделе
+описания <strong>Sphinx</strong> выше, здесь перечисляется список моментов, на которые следует обратить внимание.</p>
+<ul class="simple">
+<li><p>Для вставления рисунков нужно использовать конструкцию <strong>.. figure::</strong>.
+В ней есть ряд полезных параметров. <strong>:name:</strong> служит меткой,
+по которой можно ссылаться на рисунок с задействованием автоматической нумерации.
+<strong>:width:</strong> определяет масштабирование рисунков (например в процентах к ширине содержимого страницы).</p></li>
+<li><p>Рисунки следует подписывать. Для этого используются два следующих за объявлением рисунка
+два блока (второй не обязателен, в нем дополнительная часть описания).</p></li>
+<li><p>Ссылка на рисунок в тексте с помощью конструкции типа <a class="reference internal" href="#file-structure-figure"><span class="std std-numref">(Рис. 14.6.1)</span></a></p></li>
+<li><p>Имя файла рисунка задается относительно папки, в которой находится документ (<a href="#id14"><span class="problematic" id="id15">*</span></a>.rst), в котором объявляется ссылка на рисунок.</p></li>
+<li><p>Необходимо следит за размеров файлов рисунков. Это особенно актуально,
+когда вставляются фотографии, как правил с огромным, абсолютно ненужным
+разрешением. Такие файлы следует обработать уменьшив разрешение, например,
+в программе <strong>ImageJ</strong>.</p></li>
+<li><p>Для полутоновых картинок без линий векторной график допускается использовать
+формат <strong>JPEG</strong>. В остальных случаях, особенно фрагментов экрана компьютера
+рекомендуется формат <strong>PNG</strong>.</p></li>
+</ul>
+</section>
+<section id="id16">
+<h2><span class="section-number">14.8. </span>Работа с таблицами<a class="headerlink" href="#id16" title="Ссылка на этот заголовок"></a></h2>
+<p>Примеров работы с изображениями уже имеется множество в существующем контексте данного проекта.
+Вместо пошаговых инструкций, каких множество в интернете, например по ссылкам в разделе
+описания <strong>Sphinx</strong> выше, здесь перечисляется список моментов, на которые следует обратить внимание.</p>
+<ul class="simple">
+<li><p>Для вставления таблиц нужно использовать одну из конструкций
+<strong>.. list-table::</strong> или <strong>.. csv-table::</strong>.
+Первая удобна тем, что контент каждой ячейки удобно редактировать
+как любой контент. Это актуально, если текст длинный или в нем требуется
+нетривиальное форматирование.
+Второй тип удобен тем, что в нем на строку таблицы приходится строка исходного текста.
+А сам текст строки соответствует формату <strong>CSV</strong>, в который можно экспортировать таблицы <strong>EXCEL</strong></p></li>
+<li><p>Таблицы следует подписывать как и рисунки.
+В отличие от рисунка текст подписи таблицы содержится в объявлении таблицы.
+Нумерация таблиц и ссылки на них в тексте оформляются аналогично рисункам.</p></li>
+</ul>
+</section>
+<section id="id17">
+<h2><span class="section-number">14.9. </span>Вопросы и ответы<a class="headerlink" href="#id17" title="Ссылка на этот заголовок"></a></h2>
+<section id="q-branch">
+<h3><span class="section-number">14.9.1. </span>Q: Как создать мой собственный branch для работы над руководством?<a class="headerlink" href="#q-branch" title="Ссылка на этот заголовок"></a></h3>
+<p>Обратите внимание, что на GitHhub есть качественный справочник по работе с ним.
+В частности, ответ на данный вопрос содержится на странице</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
+</pre></div>
+</div>
+<p>Для создания новой ветки на странице кода проекта нужно развернуть список бранчей и
+в текстовом окне напечатайте название нового бранча и скомандуйте создать.</p>
+<p>Не совсем к данному вопросу но важно, каждому автору нужно придумать себе код (псевдоним)
+из двух или трех заглавных латинских букв.
+Этот код можно и нужно использовать и в других контекстах для лаконичности меток и быстрой узнаваемости.
+Называть собственный бранч рекомендуется этим кодом.</p>
+</section>
+<section id="q">
+<h3><span class="section-number">14.9.2. </span>Q: Как мне в тексте вставить ссылку на номер изображения или таблицы?<a class="headerlink" href="#q" title="Ссылка на этот заголовок"></a></h3>
+</section>
+<section id="q-web">
+<h3><span class="section-number">14.9.3. </span>Q: Как вставить гиперссылку на Web страницу?<a class="headerlink" href="#q-web" title="Ссылка на этот заголовок"></a></h3>
+<p><strong>Пример ссылки непосредственно в тексте</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Полезным и даже необходимым является
+`расширение для работы с руководством в Cphinx &lt;https://docs.restructuredtext.net/&gt;`_
+Вся информация по установке и использованию содержится по этой ссылке.
+</pre></div>
+</div>
+<p>Выглядит так:</p>
+<p>Полезным и даже необходимым является
+<a class="reference external" href="https://docs.restructuredtext.net/">расширение для работы с руководством в Cphinx</a>
+Вся информация по установке и использованию содержится по этой ссылке.</p>
+<p><strong>Пример ссылки непосредственно в тексте в которой вместо текста отображается сам адрес ссылки</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Вся информация по ссылке:
+`&lt;https://docs.restructuredtext.net/&gt;`_
+</pre></div>
+</div>
+<p>Выглядит так:</p>
+<p>Вя информация по ссылке:
+<a class="reference external" href="https://docs.restructuredtext.net/">https://docs.restructuredtext.net/</a></p>
+</section>
+<section id="q-snippet">
+<h3><span class="section-number">14.9.4. </span>Q: Эксприменты со snippet<a class="headerlink" href="#q-snippet" title="Ссылка на этот заголовок"></a></h3>
+<div class="admonition danger">
+<p class="admonition-title">Опасно</p>
+<p>Опасность!</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">download</dt>
+<dd class="field-odd"><p><a class="reference external" href="c:/tmp/example.txt">Пример некоторой работы</a></p>
+</dd>
+</dl>
+<p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">C</kbd></kbd></p>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>пример размещения замечания пример размещения замечания пример размещения замечания
+пример размещения замечания</p>
+</div>
+</section>
+<section id="id19">
+<h3><span class="section-number">14.9.5. </span>Q: Выделение блоков кодов<a class="headerlink" href="#id19" title="Ссылка на этот заголовок"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>mkdir projects
+<span class="linenos">2</span><span class="nb">cd</span> projects
+<span class="linenos">3</span><span class="nb">cd</span> QARadiology
+<span class="linenos">4</span>code .
+</pre></div>
+</div>
+<p>The literal blocks are now highlighted as HTML, until a new directive is found.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;&lt;</span><span class="nt">head</span><span class="p">&gt;&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>This is a text.<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>The following directive changes the hightlight language to SQL.</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">mytable</span>
+</pre></div>
+</div>
+<p>From here on no highlighting will be done.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SELECT * FROM mytable
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="Apendix_A.html" class="btn btn-neutral float-left" title="13. Приложение A. Терминология" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="Apendix_C.html" class="btn btn-neutral float-right" title="15. Приложение В. Справочная информация" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Kichigin.</p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

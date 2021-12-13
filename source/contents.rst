@@ -60,6 +60,8 @@
     
     Intro/Introduction
     QA/QA1
+    Excursion/excursion1
+    Conclusion/Conclusion1
     
 * :ref:`genindex`
 * :ref:`modindex`

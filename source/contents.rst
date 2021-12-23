@@ -62,6 +62,7 @@
     QA/QA1
     Excursion/excursion1
     Conclusion/Conclusion1
+    Biblio/bib
     
 * :ref:`genindex`
 * :ref:`modindex`

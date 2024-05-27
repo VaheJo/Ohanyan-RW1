@@ -15,6 +15,7 @@
     US/US1
     Conclusion/Conclusion1
     Biblio/bib
+    Ophthalmology/Ophtol
     
 * :ref:`genindex`
 * :ref:`modindex`
